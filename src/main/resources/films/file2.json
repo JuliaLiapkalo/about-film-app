@@ -1,0 +1,102 @@
+[
+  {
+    "name": "The Lord of the Rings: The Two Towers",
+    "genre": "Fantasy",
+    "releaseYear": 2002,
+    "mainActors": ["Elijah Wood", "Ian McKellen"],
+    "director": {
+      "name": "Peter Jackson",
+      "age": 60
+    }
+  },
+  {
+    "name": "The Lord of the Rings: The Return of the King",
+    "genre": "Fantasy",
+    "releaseYear": 2003,
+    "mainActors": ["Elijah Wood", "Ian McKellen"],
+    "director": {
+      "name": "Peter Jackson",
+      "age": 60
+    }
+  },
+  {
+    "name": "The Silence of the Lambs",
+    "genre": "Thriller",
+    "releaseYear": 1991,
+    "mainActors": ["Jodie Foster", "Anthony Hopkins"],
+    "director": {
+      "name": "Jonathan Demme",
+      "age": 73
+    }
+  },
+  {
+    "name": "Goodfellas",
+    "genre": "Crime",
+    "releaseYear": 1990,
+    "mainActors": ["Robert De Niro", "Ray Liotta"],
+    "director": {
+      "name": "Martin Scorsese",
+      "age": 79
+    }
+  },
+  {
+    "name": "The Departed",
+    "genre": "Crime",
+    "releaseYear": 2006,
+    "mainActors": ["Leonardo DiCaprio", "Matt Damon"],
+    "director": {
+      "name": "Martin Scorsese",
+      "age": 79
+    }
+  },
+  {
+    "name": "Gladiator",
+    "genre": "Action",
+    "releaseYear": 2000,
+    "mainActors": ["Russell Crowe", "Joaquin Phoenix"],
+    "director": {
+      "name": "Ridley Scott",
+      "age": 83
+    }
+  },
+  {
+    "name": "The Green Mile",
+    "genre": "Drama",
+    "releaseYear": 1999,
+    "mainActors": ["Tom Hanks", "Michael Clarke Duncan"],
+    "director": {
+      "name": "Frank Darabont",
+      "age": 62
+    }
+  },
+  {
+    "name": "Se7en",
+    "genre": "Thriller",
+    "releaseYear": 1995,
+    "mainActors": ["Brad Pitt", "Morgan Freeman"],
+    "director": {
+      "name": "David Fincher",
+      "age": 59
+    }
+  },
+  {
+    "name": "Inglourious Basterds",
+    "genre": "War",
+    "releaseYear": 2009,
+    "mainActors": ["Brad Pitt", "Christoph Waltz"],
+    "director": {
+      "name": "Quentin Tarantino",
+      "age": 58
+    }
+  },
+  {
+    "name": "The Social Network",
+    "genre": "Biography",
+    "releaseYear": 2010,
+    "mainActors": ["Jesse Eisenberg", "Andrew Garfield"],
+    "director": {
+      "name": "David Fincher",
+      "age": 59
+    }
+  }
+]
