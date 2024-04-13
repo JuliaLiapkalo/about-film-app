@@ -6,10 +6,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Field;
 import java.util.List;
 
+@Slf4j
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,7 +31,8 @@ public class Film {
             field.setAccessible(true);
             return field.get(this);
         } catch (NoSuchFieldException | IllegalAccessException e) {
-            throw new RuntimeException("Error accessing attribute: " + attributeName, e);
+            log.error("No {} field in Film entity!", e.getMessage());
+            throw new RuntimeException();
         }
     }
 

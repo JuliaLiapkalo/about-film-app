@@ -18,13 +18,13 @@ import java.util.Map;
 public class ProcessJsonController {
 
     static ParseJsonService parseJsonService = new ParseJsonServiceImpl();
-    static GenerateXMLStatisticService generateXmlStatistics = new GenerateXMLStatisticServiceImpl();
+    static GenerateXMLStatisticService generateXMLStatisticService = new GenerateXMLStatisticServiceImpl();
     static WriteXMLToFileService writeXMLToFileService = new WriteXMLToFileServiceImpl();
 
     public static void processJson(String path, String attribute) {
         Map<String, Integer> attributeCounts = new HashMap<>();
 
         parseJsonService.parseFiles(path, attribute, attributeCounts);
-        writeXMLToFileService.writeXmlToFile(attribute, generateXmlStatistics.generateXmlStatistics(attributeCounts));
+        writeXMLToFileService.writeXmlToFile(attribute, generateXMLStatisticService.generateXmlStatistics(attributeCounts));
     }
 }

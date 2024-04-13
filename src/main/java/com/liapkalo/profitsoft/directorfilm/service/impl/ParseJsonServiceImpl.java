@@ -51,6 +51,7 @@ public class ParseJsonServiceImpl implements ParseJsonService {
 
         } catch (IOException e) {
             log.error("Error parsing files in directory: {}", path, e);
+            System.exit(0);
         }
     }
 
@@ -74,6 +75,7 @@ public class ParseJsonServiceImpl implements ParseJsonService {
 
         } catch (IOException e) {
             log.error("Error parsing file: {}", file.getPath(), e);
+            System.exit(0);
         }
     }
 
@@ -85,11 +87,10 @@ public class ParseJsonServiceImpl implements ParseJsonService {
      * @param attributeCounts A map containing attribute values as keys and their respective counts as values.
      */
     private void processFilmAttribute(Film film, String attribute, Map<String, Integer> attributeCounts) {
-        Object filmAttribute = film.getAttribute(attribute);
-        if (filmAttribute instanceof List<?>) {
-            processAttributeList((List<?>) filmAttribute, attributeCounts);
+        if (film.getAttribute(attribute) instanceof List<?>) {
+            processAttributeList((List<?>) film.getAttribute(attribute), attributeCounts);
         } else {
-            String attributeValue = String.valueOf(filmAttribute);
+            String attributeValue = String.valueOf(film.getAttribute(attribute));
             attributeCounts.put(attributeValue, attributeCounts.getOrDefault(attributeValue, 0) + 1);
         }
     }

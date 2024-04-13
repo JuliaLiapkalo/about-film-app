@@ -4,7 +4,6 @@ import com.liapkalo.profitsoft.directorfilm.service.GenerateXMLStatisticService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -35,7 +34,7 @@ public class GenerateXMLStatisticServiceImpl implements GenerateXMLStatisticServ
      * @param attributeCounts The map containing attribute counts.
      * @return A list of map entries sorted by their integer values in descending order.
      */
-    private static List<Map.Entry<String, Integer>> getSortedEntries(Map<String, Integer> attributeCounts) {
+    private List<Map.Entry<String, Integer>> getSortedEntries(Map<String, Integer> attributeCounts) {
         List<Map.Entry<String, Integer>> sortedEntries = new ArrayList<>(attributeCounts.entrySet());
 
         sortedEntries.sort((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()));
