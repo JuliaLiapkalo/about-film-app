@@ -36,12 +36,12 @@ public class GenerateXMLStatisticServiceTest {
 
         assertEquals("<statistics> \n" +
                 " <item>\n" +
-                "    <value>action</value>\n" +
-                "    <count>3</count>\n" +
-                " </item>\n" +
-                " <item>\n" +
                 "    <value>comedy</value>\n" +
                 "    <count>5</count>\n" +
+                " </item>\n" +
+                " <item>\n" +
+                "    <value>action</value>\n" +
+                "    <count>3</count>\n" +
                 " </item>\n" +
                 " <item>\n" +
                 "    <value>drama</value>\n" +
