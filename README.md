@@ -43,6 +43,12 @@ Age;
  - [Output](https://github.com/JuliaLiapkalo/about-film-app/blob/master/statistics_by_mainActors.xml)
 
 
+## Examples of parameters
+
+./src/main/resources/films mainActors
+./src/main/resources/films genre
+
+
 
 ## Performance test with multiple threads
 

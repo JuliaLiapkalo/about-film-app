@@ -8,12 +8,10 @@ import com.liapkalo.profitsoft.directorfilm.service.impl.ParseJsonServiceImpl;
 import com.liapkalo.profitsoft.directorfilm.service.impl.WriteXMLToFileServiceImpl;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Slf4j
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ProcessJsonController {
 
