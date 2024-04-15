@@ -45,8 +45,8 @@ Age;
 
 ## Examples of parameters
 
-./src/main/resources/films mainActors
-./src/main/resources/films genre
+`./src/main/resources/films mainActors`
+`./src/main/resources/films genre`
 
 
 
