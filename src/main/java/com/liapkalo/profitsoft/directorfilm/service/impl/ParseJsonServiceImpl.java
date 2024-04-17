@@ -51,7 +51,6 @@ public class ParseJsonServiceImpl implements ParseJsonService {
 
         } catch (IOException e) {
             log.error("Error parsing files in directory: {}", path, e);
-            System.exit(0);
         }
     }
 
@@ -75,7 +74,6 @@ public class ParseJsonServiceImpl implements ParseJsonService {
 
         } catch (IOException e) {
             log.error("Error parsing file: {}", file.getPath(), e);
-            System.exit(0);
         }
     }
 
